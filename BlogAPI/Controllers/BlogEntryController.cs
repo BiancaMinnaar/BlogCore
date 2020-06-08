@@ -6,24 +6,26 @@ using BlogAPI.Repository;
 using DomainModels;
 using Microsoft.AspNetCore.Mvc;
 
+// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
 namespace BlogAPI.Controllers
 {
     [Route("api/[controller]")]
-    public class BlogController : Controller
+    public class BlogEntryController : Controller
     {
         [HttpPost]
-        public WebAPIResult<Blog> Post([FromBody]Blog value)
+        public WebAPIResult<BlogEntry> Post([FromBody]BlogEntry value)
         {
             try
             {
-                return new WebAPIResult<Blog>
+                return new WebAPIResult<BlogEntry>
                 {
-                    Status = new BlogRepository().AddBlog(value)
+                    Status = new BlogRepository().AddBlogEntry(value)
                 };
             }
             catch (Exception excp)
             {
-                return new WebAPIResult<Blog>
+                return new WebAPIResult<BlogEntry>
                 {
                     Status = new ServiceFeedback
                     {
@@ -37,14 +39,14 @@ namespace BlogAPI.Controllers
         }
 
         [HttpGet]
-        public WebAPIResult<List<Blog>> Get()
+        public WebAPIResult<List<BlogEntry>> Get()
         {
             var blogRepo = new BlogRepository();
             try
             {
-                return new WebAPIResult<List<Blog>>
+                return new WebAPIResult<List<BlogEntry>>
                 {
-                    DataModel = blogRepo.GetBlogs(),
+                    DataModel = blogRepo.GetBlogEntriesSortAsc(),
                     Status = new ServiceFeedback
                     {
                         Message = "Success",
@@ -54,7 +56,7 @@ namespace BlogAPI.Controllers
             }
             catch (Exception excp)
             {
-                return new WebAPIResult<List<Blog>>
+                return new WebAPIResult<List<BlogEntry>>
                 {
                     Status = new ServiceFeedback
                     {
