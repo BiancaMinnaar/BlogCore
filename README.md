@@ -93,3 +93,26 @@ first result: {
         "stackTrace": null
     }
 }
+
+4. Add Controller methods to facilitate adding an entry and returning all entries sorted asc
+- https://localhost:5001/api/Blog GET
+- https://localhost:5001/api/BlogEntry POST
+- https://localhost:5001/api/BlogEntry GET
+- Result:
+{
+    "dataModel": [
+        {
+            "id": "b85094ad-f691-45cf-a833-5df58a102c22",
+            "blogID": "8c7ad81a-9f24-49da-9f3f-f862c2ead2a4",
+            "headingText": "My First Entry",
+            "entryText": "To Conclude test 4",
+            "userID": "d7b3984a-31fd-4938-8c6a-efcb720f1d39",
+            "entryDate": "2020-06-08T17:56:44.320533"
+        }
+    ],
+    "status": {
+        "status": 200,
+        "message": "Success",
+        "stackTrace": null
+    }
+}
