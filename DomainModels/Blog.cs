@@ -9,7 +9,6 @@ namespace DomainModels
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Display(Name = "ID")]
         public Guid ID { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
