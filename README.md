@@ -50,3 +50,14 @@ API Calls
 {
     userName
 }
+
+Development notes
+Initialisation of BlogController successful on https://localhost:5001/api/Blog POST
+first result: {
+    "dataModel": null,
+    "status": {
+        "status": 200,
+        "message": "Success",
+        "stackTrace": null
+    }
+}
