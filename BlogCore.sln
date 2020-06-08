@@ -1,7 +1,12 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogAPI", "BlogAPI\BlogAPI.csproj", "{83A6D810-5FA8-4819-91F6-221ACBBAA669}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogAPI", "BlogAPI\BlogAPI.csproj", "{2614F39C-4F5A-4BAE-9F48-1664F39A450F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D91A45FC-F983-4A9D-81C8-33F0803B106E}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,9 +14,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{83A6D810-5FA8-4819-91F6-221ACBBAA669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{83A6D810-5FA8-4819-91F6-221ACBBAA669}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{83A6D810-5FA8-4819-91F6-221ACBBAA669}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{83A6D810-5FA8-4819-91F6-221ACBBAA669}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2614F39C-4F5A-4BAE-9F48-1664F39A450F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2614F39C-4F5A-4BAE-9F48-1664F39A450F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2614F39C-4F5A-4BAE-9F48-1664F39A450F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2614F39C-4F5A-4BAE-9F48-1664F39A450F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
