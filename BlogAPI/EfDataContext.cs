@@ -16,6 +16,10 @@ namespace BlogAPI
 
         public DbSet<Blog> Blogs { get; set; }
 
+        public DbSet<User> Users { get; set; }
+
+        public DbSet<BlogEntry> BlogEntries { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder options)
            => options.UseSqlite("Data Source=BlogKata.db");
 

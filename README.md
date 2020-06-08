@@ -64,3 +64,32 @@ first result: {
 
 2. Test Blog Creation with BlogController - success with body json
  - {"Title":"The First Blog","Description":"This is to test the BlogController POST"}
+
+3. Add And Test Create User and Return all users from userController
+- https://localhost:5001/api/user POST
+- {"UserName":"Bianca"}
+- Result:
+{
+    "dataModel": null,
+    "status": {
+        "status": 200,
+        "message": "Success",
+        "stackTrace": null
+    }
+}
+- https://localhost:5001/api/user GET
+- Result:
+{
+    "dataModel": [
+        {
+            "id": "d7b3984a-31fd-4938-8c6a-efcb720f1d39",
+            "userName": "Bianca",
+            "creationDate": "2020-06-08T17:33:56.706391"
+        }
+    ],
+    "status": {
+        "status": 200,
+        "message": "Success",
+        "stackTrace": null
+    }
+}
