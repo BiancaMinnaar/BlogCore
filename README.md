@@ -52,7 +52,7 @@ API Calls
 }
 
 Development notes
-Initialisation of BlogController successful on https://localhost:5001/api/Blog POST
+1.Initialisation of BlogController successful on https://localhost:5001/api/Blog POST
 first result: {
     "dataModel": null,
     "status": {
@@ -61,3 +61,6 @@ first result: {
         "stackTrace": null
     }
 }
+
+2. Test Blog Creation with BlogController - success with body json
+ - {"Title":"The First Blog","Description":"This is to test the BlogController POST"}
